@@ -6,7 +6,7 @@ public class TypeCResource : Resource
 {
     void Start()
     {
-        TypeC typeCResource = new TypeC();
+        TypeCClass typeCResource = new TypeCClass();
         setResourceType(typeCResource);
     }
 

@@ -7,7 +7,7 @@ public class TypeBResource : Resource
     // Start is called before the first frame update
     void Start()
     {
-        TypeB typeBResource = new TypeB();
+        TypeBClass typeBResource = new TypeBClass();
         setResourceType(typeBResource);
     }
 
