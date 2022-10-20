@@ -22,7 +22,7 @@ public class ScriptPlayer : MonoBehaviour
         if (Input.GetKey("s"))
         {
             gameObject.transform.Translate(Vector3.up * Time.deltaTime * -fspeed, Space.World);
-            Debug.Log("Player is moving dows");
+            Debug.Log("Player is moving down");
         }
         if (Input.GetKey("a"))
         {
@@ -33,6 +33,11 @@ public class ScriptPlayer : MonoBehaviour
         {
             gameObject.transform.Translate(Vector3.right * Time.deltaTime * fspeed, Space.World);
             Debug.Log("Player is moving right");
+        }
+        if (Input.GetMouseButton(0))
+        {
+           
+            Debug.Log("Player has mined");
         }
 
     }
