@@ -8,6 +8,7 @@ public class BuildingParentClass : MonoBehaviour
     //Initializing the resource type interface
     BuildingType buildingType;
     ResourceType resourceNeeded;
+    ResourceType resource2;
     int numOfResourcesNeeded;
     // Start is called before the first frame update
     void Start()
@@ -30,11 +31,18 @@ public class BuildingParentClass : MonoBehaviour
     }
     public void setResourceNeeded(ResourceType _resourceNeeded)
     {
-        for (  int i = 1; i < numOfResourcesNeeded; i++)
-        {
+       
             resourceNeeded = _resourceNeeded;
-
-        }
+        
+       
+    }
+    public void setResourceNeededComplex(ResourceType _resourceNeeded, ResourceType _resourceNeeded2)
+    {
+        
+        
+            resourceNeeded = _resourceNeeded;
+            resource2 = _resourceNeeded2;
+        
     }
 
     void produceGoods()
