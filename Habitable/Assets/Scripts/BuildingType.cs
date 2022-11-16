@@ -5,5 +5,6 @@ using UnityEngine;
 
 public interface BuildingType
 {
-    public void BuildingFunction();
+    
+    public void BuildingType();
 }

@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FoodBuilding : BuildingParentClass
+public class hospitalBuilding : BuildingParentClass
 {
     void Start()
     {
-        TypeBClass resourceB = new TypeBClass();
-        setResourceNeeded(resourceB);
+        TypeDClass resourceD = new TypeDClass();
+        setResourceNeeded(resourceD);
         PassiveBuildingType passiveType = new PassiveBuildingType();
         setBuildingType(passiveType);
     }
 }
+

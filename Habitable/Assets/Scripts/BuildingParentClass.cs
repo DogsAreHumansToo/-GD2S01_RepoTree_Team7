@@ -7,7 +7,8 @@ public class BuildingParentClass : MonoBehaviour
 {
     //Initializing the resource type interface
     BuildingType buildingType;
-    ResourceType resourceType;
+    ResourceType resourceNeeded;
+    int numOfResourcesNeeded;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,17 +19,24 @@ public class BuildingParentClass : MonoBehaviour
     void Update()
     {
         //calling the BuildingFunction function via the interface
-        buildingType.BuildingFunction();
+        buildingType.BuildingType();
+        Debug.Log("Resource Needed to build this building is"); 
+        resourceNeeded.Resourcetype();
     }
     //function thats sets the resource type
     public void setBuildingType(BuildingType _newBuildingtype)
     {
         buildingType = _newBuildingtype;
     }
-    public void setBuildingType(ResourceType _resourceNeeded)
+    public void setResourceNeeded(ResourceType _resourceNeeded)
     {
+        for (  int i = 1; i < numOfResourcesNeeded; i++)
+        {
+            resourceNeeded = _resourceNeeded;
 
+        }
     }
+
     void produceGoods()
     {
 
