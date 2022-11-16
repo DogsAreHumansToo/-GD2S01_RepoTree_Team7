@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 //class that calls from the parent interface that defines the
 //resourcetype function. Debug log states what type of resource this is
-public class TypeAClass : ResourceType
+public class TypeDClass : ResourceType
 {
     public void Resourcetype()
     {
-        Debug.Log("Type A");
+        Debug.Log("Type D");
     }
 }
