@@ -7,7 +7,7 @@ public class BuildingParentClass : MonoBehaviour
 {
     //Initializing the resource type interface
     BuildingType buildingType;
-    
+    ResourceType resourceType;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +24,10 @@ public class BuildingParentClass : MonoBehaviour
     public void setBuildingType(BuildingType _newBuildingtype)
     {
         buildingType = _newBuildingtype;
+    }
+    public void setBuildingType(ResourceType _resourceNeeded)
+    {
+
     }
     void produceGoods()
     {
