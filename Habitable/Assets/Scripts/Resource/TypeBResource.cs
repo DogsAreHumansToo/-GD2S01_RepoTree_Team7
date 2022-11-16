@@ -11,6 +11,8 @@ public class TypeBResource : Resource
     {
         TypeBClass typeBResource = new TypeBClass();
         setResourceType(typeBResource);
+       
+
     }
 
 }
